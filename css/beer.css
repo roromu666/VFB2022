@@ -1,0 +1,193 @@
+.beer-title-wrapper {
+  display: block;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  margin: 30px 0 15px 0;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* 1024pxまでの幅の場合に適応される */
+  .beer-title-wrapper {
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    margin: 30px 0 15px 0;
+    padding-bottom: 25px;
+  }
+}
+
+.beer-tag {
+  border-radius: 4px;
+  border: none;
+  font-size: large;
+  margin: 3px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.beer-title {
+  font-size: large;
+  color: #696969;
+  font-weight: bold;
+  margin-bottom: 0 !important;
+}
+
+.beer-purchase {
+  color: #696969;
+  font-weight: 400;
+  float: right;
+  margin-right: 30px;
+}
+
+.beer-image {
+  width: 10%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 3%;
+}
+
+.beer-description-wrapper {
+  display: inline-flex;
+}
+
+.beer-description {
+  width: 56%;
+  color: black;
+  margin-left: 3%;
+  font-family: "Noto Sans JP", sans-serif !important;
+}
+
+.beer-description-title {
+  font-size: large;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.beer-chart-wrapper {
+  width: 30%;
+  min-height: 300px;
+}
+
+.beer-description-text {
+  word-break: break-all;
+}
+
+.beer-food {
+  margin-top: 15px;
+  font-size: medium;
+  color: #696969;
+}
+
+.beer-chart-canvas {
+  display: inline-block;
+}
+
+.selectable {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.selectable:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+.beer-tab {
+  font-size: x-large;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px rgb(99, 110, 0);
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 8px 8px 0 0;
+  border: 3px solid rgba(160, 123, 0, 0.6);
+  border-bottom: none;
+  background-color: #fdc11d;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.beer-tab:hover {
+  background-color: #fdaf1d;
+
+
+}
+
+.ipa {
+  background-color: #3cb371;
+}
+
+.belgian-white {
+  background-color: #9e9478;
+}
+
+.pilsner {
+  background-color: #d6d300;
+}
+
+.stout {
+  background-color: #501d00;
+}
+
+.porter {
+  background-color: #501d00;
+}
+
+.black {
+  background-color: #501d00;
+}
+
+.weizen {
+  background-color: #bea357;
+}
+
+.red {
+  background-color: #7e2800;
+}
+
+.special {
+  background-color: #d55d25;
+}
+
+.pale-ale {
+  background-color: #c14b14;
+}
+
+.lambic {
+  background-color: #007e11;
+}
+
+.bock {
+  background-color: #c45f00;
+}
+
+.strong {
+  background-color: #c4a700;
+}
+
+.trapist {
+  background-color: #fff09d;
+}
+
+.strongDark {
+  background-color: #262e04;
+}
+
+.official {
+  border-radius: 15px;
+  border: none;
+  font-size: large;
+  margin-left: 15px;
+  opacity: 0.5;
+}
+
+.staff-recommendation {
+  border-radius: 15px;
+  border: none;
+  font-size: large;
+  margin-left: 15px;
+  opacity: 0.5;
+}

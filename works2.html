@@ -1,144 +1,579 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>ヴァーチャルビアフェスティバル2022</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/print.css" media="print">
-<script src="js/openclose.js"></script>
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<style>
-.menu1 a {background-position: -10px -10px;}
-.menu2 a {background-position: -10px -130px;}
-.menu3 a {background-position: -10px -250px;}
-.menu4 a {background-position: -10px -370px;}
-.menu5 a {background-position: -10px -490px;}
-</style>
-<![endif]-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ヴァーチャルビアフェスティバル2022</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/print.css" media="print">
+	<link rel="stylesheet" type="text/css" media="all" href="css/beer.css">
+
+
+	<script src="js/openclose.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
 </head>
 
 
 <body class="company">
 
-<div id="container">
+	<div id="container">
 
-<!--PC用（801px以上端末）で表示させるブロック-->
-<header class="pc">
+		<!--PC用（801px以上端末）で表示させるブロック-->
+		<header class="pc">
 
-	<h1 class="logo"><a href="index.html"><img src="images/logo2.png" alt="ヴァーチャルビアフェスティバル2022"></a></h1>
+			<h1 class="logo"><a href="index.html"><img src="images/logo2.png" alt="ヴァーチャルビアフェスティバル2022"></a></h1>
 
-	<!--PC用（801px以上端末）メニュー-->
-	<nav id="menubar">
-	<ul>
-	<li class="menuimg menu1"><a href="index.html"><span>Home</span></a></li>
-	<li class="menuimg menu2"><a href="company.html"><span>VBF2022</span></a></li>
-	<li class="menuimg menu3"><a href="works.html"><span>DJ/VJ</span></a></li>
-	<li class="menuimg menu4 current"><a href="works2.html"><span>Beer！</span></a></li>
-	</ul>
-	</nav>
-	<ul class="icon">
-	<li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
-	</ul>
+			<!--PC用（801px以上端末）メニュー-->
+			<nav id="menubar">
+				<ul>
+					<li class="menuimg menu1"><a href="index.html"><span>Home</span></a></li>
+					<li class="menuimg menu2"><a href="company.html"><span>VBF2022</span></a></li>
+					<li class="menuimg menu3"><a href="works.html"><span>DJ/VJ</span></a></li>
+					<li class="menuimg menu4 current"><a href="works2.html"><span>Beer！</span></a></li>
+				</ul>
+			</nav>
+			<ul class="icon">
+				<li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+			</ul>
 
-</header>
-<!--/.pc-->
+		</header>
+		<!--/.pc-->
 
-<!--小さな端末用（800px以下端末）で表示させるブロック-->
-<header class="sh">
+		<!--小さな端末用（800px以下端末）で表示させるブロック-->
+		<header class="sh">
 
-	<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="ヴァーチャルビアフェスティバル2022"></a></h1>
+			<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="ヴァーチャルビアフェスティバル2022"></a></h1>
 
-	<!--小さな端末用（800px以下端末）メニュー-->
-	<div id="menubar-s">
-	<nav>
-	<ul>
-	<li class="menuimg menu1"><a href="index.html"><span>Home</span></a></li>
-	<li class="menuimg menu2"><a href="company.html"><span>VBF2022</span></a></li>
-	<li class="menuimg menu3t"><a href="works.html"><span>DJ/VJ</span></a></li>
-	<li class="menuimg menu4 current"><a href="works2.html"><span>ビール紹介</span></a></li>
-	</ul>
-	</nav>
-	<ul class="icon">
-	<li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
-	</ul>
-	
+			<!--小さな端末用（800px以下端末）メニュー-->
+			<div id="menubar-s">
+				<nav>
+					<ul>
+						<li class="menuimg menu1"><a href="index.html"><span>Home</span></a></li>
+						<li class="menuimg menu2"><a href="company.html"><span>VBF2022</span></a></li>
+						<li class="menuimg menu3t"><a href="works.html"><span>DJ/VJ</span></a></li>
+						<li class="menuimg menu4 current"><a href="works2.html"><span>ビール紹介</span></a></li>
+					</ul>
+				</nav>
+				<ul class="icon">
+					<li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+				</ul>
+
+			</div>
+			<!--/#menubar-s-->
+
+		</header>
+		<!--/.sh-->
+
+		<div id="contents">
+
+			<div id="main">
+
+				<span id="pagetop"></span>
+
+				<section class="box">
+
+					<Br>
+					</center>
+					<article class="post">
+						<div id="paleale">
+							<!-- ! よなよなエール -->
+							<div class="beer-title-wrapper">
+								<h2 class="beer-title">よなよなエール<button class="beer-tag pale-ale">Pale Ale</button>
+								</h2>
+								<span class="beer-purchase">
+									購入場所：<a href="https://yonasato.com/ec/product/yonayona_ale"
+										target=”_blank”>よなよなエール公式ウェブサイト</a>
+								</span>
+							</div>
+							<div class="beer-description-wrapper">
+								<img src="images/beers/yonayona.png" alt="" class="beer-image" />
+								<div class="beer-chart-wrapper">
+									<!-- よなよなエールのグラフ -->
+									<canvas class='beer-chart-canvas' id="yonayona"></canvas>
+								</div>
+								<div class="beer-description">
+									<p class="beer-description-title">
+										王道ペールエールを追求したアメリカンペールエール
+									</p>
+									<p class="beer-description-text">
+										ここに説明を記載
+									</p>
+									<p class="beer-food">
+										おすすめのおつまみ：<BR>
+										照り焼きチキン <BR>
+										チェダーチーズ <BR>
+										酢豚 <BR>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="black">
+							<!-- ! 東京ブラック -->
+							<div id="weizen">
+								<div class="beer-title-wrapper">
+									<h2 class="beer-title">東京ブラック
+
+										<button class="beer-tag black">Black</button>
+									</h2>
+									<span class="beer-purchase">
+										購入場所：<a href="https://yonasato.com/ec/product/yonayona_ale"
+											target=”_blank”>よなよなエール公式ウェブサイト</a>
+									</span>
+								</div>
+								<div class="beer-description-wrapper">
+									<img src="images/beers/tokyob.png" alt="" class="beer-image" />
+									<div class="beer-chart-wrapper">
+										<!-- 東京ブラックのグラフ -->
+										<canvas class='beer-chart-canvas' id="tokyob"></canvas>
+									</div>
+									<div class="beer-description">
+										<p class="beer-description-title">
+											本場イギリスで飲むような黒ビール<BR>『東京ブラック』
+										</p>
+										<p class="beer-description-text">
+											ここに説明を記載
+										</p>
+										<p class="beer-food">
+											おすすめのおつまみ：
+											<BR>かきフライ
+											<BR>ローストビーフ
+											<BR>バニラアイス
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div id="pilsner">
+								<!-- ! ネパールアイス　プレミアム　ラガー -->
+								<div class="beer-title-wrapper">
+									<h2 class="beer-title">ネパールアイス　プレミアム　ラガー
+
+										<button class="beer-tag pilsner">Pilsner</button>
+									</h2>
+									<span class="beer-purchase">
+										購入場所：<a
+											href="https://www.amazon.co.jp/dp/B00M6WFZ28/ref=cm_sw_r_apan_i_1Y6NZ2FJVJZEDJV3ZAK4"
+											target=”_blank”>Amazon</a>
+									</span>
+								</div>
+								<div class="beer-description-wrapper">
+									<img src="images/beers/nepal.png" alt="Nepal Ice PREMIUM LAGER BEERの写真"
+										class="beer-image" />
+									<div class="beer-chart-wrapper">
+										<canvas class='beer-chart-canvas' id="nepal"></canvas>
+									</div>
+									<div class="beer-description">
+										<p class="beer-description-title">
+											美味しいヒマラヤの水から生まれたビール<br>
+											『Nepal Ice PREMIUM LAGER BEER』
+										</p>
+										<p class="beer-description-text">
+											滑らかなのど越しとコクのあるやわらかい甘さ。<br>
+											ラオスの大地が生んだお米、ベルギー産ホップ、ドイツ産麦芽から醸造<br>
+											そのクオリティは数々の品評会などでも評価されています。<br>
+											温暖な気候の国のビールということもあり、氷を入れて飲んでもすっきりしていておいしいです。<br>
+										<p class="beer-food">
+											おすすめのおつまみ：スッキリした味わいなのでエスニックな料理と非常に相性がいいです。
+											ガパオライス、フォー、フライドチキンなど
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- ! ベルヘイブンスコティッシュオートスタウト -->
+							<div class="beer-title-wrapper">
+								<h2 class="beer-title">ベルヘイブンスコティッシュオートスタウト
+
+									<button class="beer-tag black">Black</button>
+								</h2>
+								<span class="beer-purchase">
+									購入場所：<a href="https://item.rakuten.co.jp/yamaya-shop/5010549306155/"
+										target=”_blank”>お酒のやまや 楽天市場店</a>
+								</span>
+							</div>
+							<div class="beer-description-wrapper">
+								<img src="images/beers/belh.png" alt="ベルヘイブンスコティッシュオートスタウトの写真" class="beer-image" />
+								<div class="beer-chart-wrapper">
+									<canvas class='beer-chart-canvas' id="belhaven"></canvas>
+								</div>
+								<div class="beer-description">
+									<p class="beer-description-title">
+										泡まで真っ黒！特濃ビターチョコ風味
+										<br>
+										『BELHAVEN SCOTTISH OAT STOUT』
+									</p>
+									<p class="beer-description-text">
+										ここに説明を記載
+									</p>
+									<p class="beer-food">
+										おすすめのおつまみ：チーズ、チョコレート、ドライフルーツなど
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- !ホフブロイヘーフェヴァイツェン -->
+						<div class="beer-title-wrapper">
+							<h2 class="beer-title">ホフブロイヘーフェヴァイツェン
+
+								<button class="beer-tag weizen">Weizen</button>
+							</h2>
+							<span class="beer-purchase">
+								購入場所：<a href="https://www.yodobashi.com/product/100000001004773591/"
+									target=”_blank”>yodobashi.com</a>
+							</span>
+						</div>
+						<div class="beer-description-wrapper">
+							<img src="images/beers/hofb.png" alt="" class="beer-image" />
+							<div class="beer-chart-wrapper">
+								<!--ホフブロイヘーフェヴァイツェンのグラフ -->
+								<canvas class='beer-chart-canvas' id="hofbrauHefe"></canvas>
+							</div>
+							<div class="beer-description">
+								<p class="beer-description-title">
+									王室御用達の白ビール。<BR>『Hofbrau Hefe Weizen』
+								</p>
+								<p class="beer-description-text">
+									ここに説明を記載
+								</p>
+								<p class="beer-food">
+									おすすめのおつまみ：<BR>ヴァイスヴルスト、プレッツェル　シーザーサラダにもぴったりです。
+								</p>
+							</div>
+						</div>
+
+						<!-- ! デリリュウム トレメンス -->
+						<div class="beer-title-wrapper">
+							<h2 class="beer-title">デリリュウム トレメンス
+
+								<button class="beer-tag strong">Golden Ale</button>
+							</h2>
+							<span class="beer-purchase">
+								購入場所：<a href="https://www.belgianbeer.co.jp/products/detail.php?product_id=82"
+									target=”_blank”>BELGIAN BEER JAPAN</a>
+							</span>
+						</div>
+						<div class="beer-description-wrapper">
+							<img src="images/beers/delirium.png" alt="" class="beer-image" />
+							<div class="beer-chart-wrapper">
+								<!-- デリリュウム トレメンスのグラフ -->
+								<canvas class='beer-chart-canvas' id="delirium"></canvas>
+							</div>
+							<div class="beer-description">
+								<p class="beer-description-title">
+									ラベルの像は幻覚？<BR>『Delirium Tremens』
+								</p>
+								<p class="beer-description-text">
+									ここに説明を記載
+								</p>
+								<p class="beer-food">
+									おすすめのおつまみ：ラムチョップ、ポテトフリット、ムール貝のワイン蒸しなど。
+								</p>
+							</div>
+						</div>
+
+						<!-- ! ブーングース -->
+						<div id="lambic">
+							<div class="beer-title-wrapper">
+								<h2 class="beer-title">ブーングース
+
+									<button class="beer-tag lambic">Lambic</button>
+								</h2>
+								<span class="beer-purchase">
+									購入場所：<a href="https://item.rakuten.co.jp/sakenomori/10000406/"
+										target=”_blank”>リカープラザ藤井　楽天市場店</a>
+								</span>
+							</div>
+							<div class="beer-description-wrapper">
+								<img src="images/beers/boon.png" alt="" class="beer-image" />
+								<div class="beer-chart-wrapper">
+									<!-- ブーングースのグラフ -->
+									<canvas class='beer-chart-canvas' id="boon"></canvas>
+								</div>
+								<div class="beer-description">
+									<p class="beer-description-title">
+										自然発酵ビール　この味本当にビール！？<BR>『BOON GEUZE』
+									</p>
+									<p class="beer-description-text">
+										ここに説明を記載
+										<!-- 世界的にもとても珍しい自然発酵ビール<BR>
+										オーク樽で熟成されたランビックとチェリージュースから作られています。<br>
+										摘みたてのチェリーの爽やかな酸味とまるでジュースのような甘さ<br>
+										新鮮なチェリーの爽やかさの絶妙なバランスで飲む人を魅了します。<br>
+										グラスにたっぷりと氷を入れて楽しむロックスタイルも人気です。<br><br>
+										どうしてもビールが苦手というそこのあなた、甘いお酒が好きであれば必ず気に入るでしょう。 -->
+									</p>
+									<p class="beer-food">
+										おすすめのおつまみ：ワッフル、ムール貝の白ワイン蒸し、エッグベネディクトなど
+									</p>
+								</div>
+							</div>
+
+							<!-- ! ビーケン -->
+							<div class="beer-title-wrapper">
+								<h2 class="beer-title">ビーケン
+
+									<button class="beer-tag special">Special Beer</button>
+								</h2>
+								<span class="beer-purchase">
+									購入場所：<a href="https://www.belgianbeer.co.jp/products/detail.php?product_id=95"
+										target=”_blank”>BELGIAN
+										BEER JAPAN</a>
+								</span>
+							</div>
+							<div class="beer-description-wrapper">
+								<img src="images/beers/bieken.png" alt="" class="beer-image" />
+								<div class="beer-chart-wrapper">
+									<!-- ビーケンのグラフ -->
+									<canvas class='beer-chart-canvas' id="bieken"></canvas>
+								</div>
+								<div class="beer-description">
+									<p class="beer-description-title">
+										現在フランダース地方で造られる本物の蜂蜜ビール<BR>『BIEKEN』
+									</p>
+									<p class="beer-description-text">
+										ここに説明を記載
+									</p>
+									<p class="beer-food">
+										おすすめのおつまみ：ブルーチーズ、牛肉のビール煮などしっかりとした味の肉料理とよく合います。
+									</p>
+								</div>
+							</div>
+
+							<!-- ! リンデマンス・ペシェリーゼ -->
+							<div class="beer-title-wrapper">
+								<h2 class="beer-title">リンデマンス・ペシェリーゼ
+
+									<button class="beer-tag lambic">Lambic</button>
+								</h2>
+								<span class="beer-purchase">
+									購入場所：<a href="https://item.rakuten.co.jp/newyork001/461229/"
+										target=”_blank”>世界のお酒　ニューヨーク　楽天市場店</a>
+								</span>
+							</div>
+							<div class="beer-description-wrapper">
+								<img src="images/beers/linde.png" alt="" class="beer-image" />
+								<div class="beer-chart-wrapper">
+									<!-- リンデマンス・ペシェリーゼ -->
+									<canvas class='beer-chart-canvas' id="linde"></canvas>
+								</div>
+								<div class="beer-description">
+									<p class="beer-description-title">
+										まるでピーチジュースのような飲みやすさ<BR>『Lindemans Pecheresse』
+									</p>
+									<p class="beer-description-text">
+										ここに説明を記載
+									</p>
+									<p class="beer-food">
+										おすすめのおつまみ：ワッフル、ムール貝の白ワイン蒸し、エッグベネディクトなど
+									</p>
+								</div>
+							</div>
+
+						</div>
+
+
+						<!-- ! シメイグリーン -->
+						<div id="trapist">
+							<div class="beer-title-wrapper">
+								<h2 class="beer-title">シメイグリーン
+
+									<button class="beer-tag trapist">Trapist</button>
+								</h2>
+								<span class="beer-purchase">
+									購入場所：<a href="https://www.yodobashi.com/product/100000001006730174/"
+										target=”_blank”>yodobashi.com</a>
+								</span>
+							</div>
+							<div class="beer-description-wrapper">
+								<img src="images/beers/green.png" alt="シメイグリーンの写真" class="beer-image" />
+								<div class="beer-chart-wrapper">
+									<canvas class='beer-chart-canvas' id="green"></canvas>
+								</div>
+								<div class="beer-description">
+									<p class="beer-description-title">
+										醸造１５０年の歴史の集大成
+										<br>
+										『シメイグリーン』
+									</p>
+									<p class="beer-description-text">
+										ここに説明を記載
+									</p>
+									<p class="beer-food">
+										おすすめのおつまみ：シーフード、サラダ、フルーツなど
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+
+				<footer>
+					<small>Copyright&copy; <a href="index.html">ヴァーチャルビアフェスティバル2022</a> All Rights Reserved.</small>
+				</footer>
+
+			</div>
+			<!--/#main-->
+
+		</div>
+		<!--/#contents-->
+
 	</div>
-	<!--/#menubar-s-->
+	<!--/#container-->
 
-</header>
-<!--/.sh-->
+	<!--ページの上部に戻る「↑」ボタン-->
+	<p class="nav-fix-pos-pagetop"><a href="#pagetop">↑</a></p>
 
-<div id="contents">
+	<!--メニュー開閉ボタン-->
+	<div id="menubar_hdr" class="close"></div>
 
-<div id="main">
+	<!--メニューの開閉処理条件設定　800px以下-->
 
-<span id="pagetop"></span>
-
-<section class="box">
-
-<h2 class="title">Beer introduction<span>Beer</span></h2>
-
-<h2>よなよなえーる</h2>
- 
-
-<h2>東京ブラック</h2>
-
-<h2>ネパールアイスプレミアムラガービール</h2>
-
-<h2>ベルヘイブンスコティッシュオートスタウト</h2>
-
-<h2>ホフブロイヘーフェヴァイツェン</h2>
-
-<h2>デリリュウムトレメンス</h2>
-
-<h2>シメイグリーン</h2>
-
-<h2>ブーングース</h2>
-
-<h2>ビーケン</h2>
-
-<h2>リンデマンスペシェリーゼ</h2>
-
-<Br><Br>
-
-<Br>
-        </center>
-
-</section>
-
-<section>
-</section>
-
-
-<footer>
-<small>Copyright&copy; <a href="index.html">ヴァーチャルビアフェスティバル2022</a> All Rights Reserved.</small>
-</footer>
-
-</div>
-<!--/#main-->
-
-</div>
-<!--/#contents-->
-
-</div>
-<!--/#container-->
-
-<!--ページの上部に戻る「↑」ボタン-->
-<p class="nav-fix-pos-pagetop"><a href="#pagetop">↑</a></p>
-
-<!--メニュー開閉ボタン-->
-<div id="menubar_hdr" class="close"></div>
-
-<!--メニューの開閉処理条件設定　800px以下-->
-<script>
-if (OCwindowWidth() <= 800) {
-	open_close("menubar_hdr", "menubar-s");
-}
-</script>
 
 </body>
+
 </html>
+
+
+<script>
+
+	if (OCwindowWidth() <= 800) {
+		open_close("menubar_hdr", "menubar-s");
+	}
+	const canvasIds = ["green", "belhaven",
+		"yonayona", "tokyob", "bieken", "boon", "nepal", "linde", "delirium", "hofbrauHefe",
+
+	] // グラフを認識するID<canvas id="ここの値をグラフ数に応じて入れる">
+	// 各ビールのグラフデータ
+	const beerData = {
+		datasets: [
+			{
+				label: "シメイグリーン",
+				data: [7, 7, 9, 5, 6, 7],
+				borderColor: "#fee407",
+				fill: false,
+
+			},
+			{
+				label: "ベルヘイブンスコティッシュオートスタウト",
+				data: [3, 5, 4, 2, 4, 8], // パラメータの値　左からホップ感, 甘味, 苦み, キレ, 酸味, ボディ
+				borderColor: "#fee407",
+				fill: false,
+
+			},
+			{
+				label: "よなよなエール", // グラフ名
+				data: [5, 5, 4, 4, 5, 6], // パラメータの値　左からホップ感, 甘味, 苦み, キレ, 酸味, ボディ
+				borderColor: "#fee407", // 線の色
+				fill: false,
+
+			},
+			{
+				label: "Tokyo Black", // グラフ名
+				data: [2, 6, 5, 4, 4, 8],
+				borderColor: "#fee407",
+				fill: false,
+
+			},
+			{
+				label: "ビーケン",
+				data: [3, 6, 6, 2, 3, 7], // パラメータの値　左からホップ感, 甘味, 苦み, キレ, 酸味, ボディ
+				borderColor: "#fee407",
+				fill: false,
+
+			},
+			{
+				label: "ブーングース",
+				data: [1, 7, 3, 3, 8, 3],
+				borderColor: "#fee407",
+				fill: false,
+
+			},
+			{
+				label: "ネパールアイス　プレミアム　ラガー",
+				data: [3, 3, 4, 8, 3, 2],
+				borderColor: "#fee407",
+				fill: false,
+
+			},
+			{
+				label: "リンデマンス・ペシェリーゼ",
+				data: [1, 10, 2, 5, 7, 4],
+				borderColor: "#fee407",
+				fill: false,
+
+			},
+			{
+				label: "デリリュウム トレメンス",
+				data: [6, 5, 7, 4, 3, 7],
+				borderColor: "#fee407",
+				fill: false,
+
+			},
+			{
+				label: "ホフブロイヘーフェヴァイツェン",
+				data: [3, 6, 1, 5, 5, 6],
+				borderColor: "#fee407",
+				fill: false,
+
+			},
+
+		],
+	};
+	// チャートを生成する処理
+	const createNewChart = (canvasId, datasets) => {
+		const ctx = document.getElementById(canvasId);
+		const radarCharts = new Chart(ctx, {
+			type: "radar",
+			data: {
+				labels: ["ホップ感", "甘味", "苦み", "キレ", "酸味", "ボディ"], // Ｘ軸のラベル
+				datasets: datasets
+			},
+			options: {
+				scale: {
+					ticks: {
+						suggestedMin: 0, //グラフの最小表示値
+						suggestedMax: 10, //グラフの最大表示値
+						// fontSize: 16, // 目盛り数字の大きさ
+						stepSize: 2 //目盛の間隔
+					},
+				},
+				maintainAspectRatio: false,
+				legend: {
+					display: false // 凡例の表示
+				},
+				elements: {
+					line: {
+						borderWidth: 5
+					}
+				}
+			},
+		});
+	}
+	// ここで処理を実行する（canvasIdsの中身の数分だけチャートが生成される）
+	for (let index = 0; index < canvasIds.length; index++) {
+		createNewChart(canvasIds[index], [beerData.datasets[index]])
+	}
+
+	// スタイルのID一覧
+	const styleList = ["ipa", "pilsner", "b-white", "black", "weizen", "red", "lambic", "bock", "strong", "paleale", "trapist", 'special']
+	// スタイル絞り込みボタンをクリックした際の処理
+	const filterSelectedStyles = (style) => {
+		if (style === "show-all") {
+			for (let index2 = 0; index2 < styleList.length; index2++) {
+				document.getElementById(styleList[index2]).style.display = "block"
+			}
+		} else {
+			const element = document.getElementById(style);
+			element.style.display = "block";
+			for (let index = 0; index < styleList.length; index++) {
+				if (style != styleList[index]) {
+					document.getElementById(styleList[index]).style.display = "none"
+				}
+			}
+		}
+	}
+</script>

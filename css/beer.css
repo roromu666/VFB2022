@@ -64,6 +64,8 @@
   font-size: large;
   text-align: center;
   margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 25;
 }
 
 .beer-chart-wrapper {
@@ -73,6 +75,7 @@
 
 .beer-description-text {
   word-break: break-all;
+  font-size: 20px;
 }
 
 .beer-food {
